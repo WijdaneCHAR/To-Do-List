@@ -67,7 +67,7 @@ export default class MyTasks extends Component {
     constructor(props){
         super(props);
         this.state = {
-                options : ["oneone","twotwo","threethree","fourfour"],
+                options : [],
         };
         this.deleteOptions = this.deleteOptions.bind(this);
         this.pickTask = this.pickTask.bind(this);
