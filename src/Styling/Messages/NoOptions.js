@@ -27,4 +27,5 @@ export const NoOptions = styled.p`
     margin:35px 0;
     color:#333;
     text-align:center;
+    font-size: 25px;
 `;

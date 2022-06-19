@@ -3,6 +3,7 @@ import Header from './Header';
 import Action from './Action';
 import Options from './Options';
 import AddOption from './AddOption';
+import swal from 'sweetalert';
 
 export default class MyTasks extends Component {
     componentDidMount() {
@@ -33,7 +34,12 @@ export default class MyTasks extends Component {
     pickTask(){
         const rnd  = Math.floor(Math.random() * this.state.options.length);
         const option = this.state.options[rnd];
-        alert(option);
+        swal({
+          title:"you have to : ",
+          text:option,
+          buttons:false,
+          timer:2000
+        });
        
         };
     

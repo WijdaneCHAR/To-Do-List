@@ -16,14 +16,15 @@ export default class AddOption extends Component {
         const option = e.target.elements.opt.value.trim();
         const error = this.props.AddOption(option);
         this.setState(() => ({ error }));
+        e.target.elements.opt.value = "";
     }
   render() {
     return <div>
     {this.state.error && <Error>{this.state.error}</Error>}
     <AddOptionDiv>
     <form onSubmit={this.AddOption}>
-    <InputOp type="text" name="opt" placeholder="Add an Option" onFocus={(e) => e.target.placeholder = ""} 
-    onBlur={(e) => e.target.placeholder = "Add an Option"}></InputOp>
+    <InputOp type="text" name="opt" placeholder="Add A Task" onFocus={(e) => e.target.placeholder = ""} 
+    onBlur={(e) => e.target.placeholder = "Add A Task"}></InputOp>
     <AddOpt>Add Option</AddOpt>
     </form>
     </AddOptionDiv>  

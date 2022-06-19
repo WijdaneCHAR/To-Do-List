@@ -7,6 +7,7 @@ export const OptionsDiv = styled.div`
     padding : 10px;
     height:50vh;
     overflow:scroll;
+    border-radius: 20px;
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -30,8 +31,9 @@ export const OptionDiv = styled.div`
 text-align:justify;
 border-bottom:1px solid #CCC;
 height:fit-content;
-padding:5px 0;
+padding:15px 10px;
 `;
 export const AddOptionDiv = styled.div`
-padding-bottom: 50px ;
+padding:30px 0;
+margin: 21px ;
 `;
