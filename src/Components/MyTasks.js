@@ -34,21 +34,32 @@ export default class MyTasks extends Component {
     pickTask(){
         const rnd  = Math.floor(Math.random() * this.state.options.length);
         const option = this.state.options[rnd];
-        swal({
+              swal({
           title:"you have to : ",
           text:option,
           buttons:false,
           timer:2000
-        });
-       
+        })
         };
     
     //TAKE THE OPTION TEXT OF THE NEW OPTION ADD:
     AddOption(opt){
-        if(!opt){
-            return 'enter valid values';
+        if(!opt){ 
+          swal({
+             text:"Enter valid tasks...",
+             buttons:false,
+             icon:'error',
+             timer:2000
+           })
+           return 'enter valid values';
         }
         else if(this.state.options.indexOf(opt) > -1){
+          swal({
+            text:"Task already exists...",
+            buttons:false,
+            icon:'error',
+            timer:2000
+          })
             return 'already exists';
         }
         this.setState((prevState) => {

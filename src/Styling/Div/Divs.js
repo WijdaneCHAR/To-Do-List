@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const OptionsDiv = styled.div`
     background-color:#f6f6f6;
     text-align:justify;
-    margin: 21px ;
+    margin: 21px 10%;
     padding : 10px;
     height:50vh;
     overflow:scroll;

@@ -5,18 +5,18 @@ const txtAppear = keyframes`
     transform: translateY(0);
 }
 20%{
-    transform: translateY(-1.5em);
+    transform: translateY(-0.5em);
    
 }
 40%{
-    transform: translateY(1em);
+    transform: translateY(0.25em);
 
 }
 60%{
-    transform: translateY(-0.5em);
+    transform: translateY(-0.25em);
 }
 80%{
-    transform: translateY(-0.25em);
+    transform: translateY(-0.5em);
 }
 100%{
     transform: translateY(0);
